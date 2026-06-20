@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUZZLE</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<div id="success-modal" class="success-modal">
+
+    <div class="success-box">
+
+        <h2>✓ تم استلام الطلب</h2>
+        <p id="order-number"></p>
+
+        </p>
+
+        <button id="close-modal">
+            إغلاق
+        </button>
+
+    </div>
+
+</div>
+<div id="loading-modal" class="loading-modal">
+
+    <div class="loading-box">
+
+        <div class="loader"></div>
+
+        <p>
+            جاري إرسال الطلب...
+        </p>
+
+    </div>
+
+</div>
+<body>
+
+    <div class="product-page">
+
+        <a href="index.html" class="back-btn">
+            ← العودة للمتجر
+        </a>
+
+        <img id="main-image" class="main-image">
+
+        <div id="gallery" class="gallery"></div>
+
+        <h1 id="product-name"></h1>
+
+        <h2 id="product-price"></h2>
+
+         <p id="product-description"></p>
+       
+        <h3>المقاسات المتوفرة</h3>
+
+        <div id="available-sizes"></div>
+
+        <div id="size-message"></div>
+
+        <button class="order-btn">
+            اطلب الآن
+        </button>
+
+        <div id="order-form-container" style="display:none;">
+
+    <h3>معلومات الطلب</h3>
+
+    <div id="selected-product-info"></div>
+
+    <input
+        type="text"
+        id="customer-name"
+        placeholder="الاسم الثلاثي">
+
+    <input
+        type="text"
+        id="customer-phone"
+        placeholder="رقم الهاتف">
+
+    <select id="customer-city">
+
+        <option value="">
+            اختر المحافظة
+        </option>
+
+        <option value= "دمشق">دمشق</option>
+<option value="ريف دمشق">ريف دمشق</option>
+<option value="حلب">حلب</option>
+<option value="إدلب">إدلب</option>
+<option value="حمص">حمص</option>
+<option value="حماة">حماة</option>
+<option value="اللاذقية">اللاذقية</option>
+<option value="طرطوس">طرطوس</option>
+<option value="درعا">درعا</option>
+<option value="دير الزور">دير الزور</option>
+<option value="القنيطرة">القنيطرة</option>
+<option value="السويداء">السويداء</option>
+<option value="الحسكة">الحسكة</option>
+<option value="الرقة">الرقة</option>
+<option value="غير ذلك">غير ذلك</option>
+    </select>
+ 
+    <div id="damascus-section" style="display:none;">
+<input
+    type="text"
+    id="customer-address"
+    placeholder="العنوان بالتفصيل">
+        
+    <div class="delivery-info">
+
+        <p>
+            يصلك الطلب خلال 48 ساعة من تأكيد الطلب
+        </p>
+
+        <p>
+            أجور التوصيل تتراوح بين
+            20 ألف و 60 ألف
+            حسب المنطقة
+        </p>
+
+        <p>
+            يمكنك التأكد من أجور التوصيل
+            عند تواصل الكابتن معك
+        </p>
+
+    </div>
+
+</div>
+
+<div id="shipping-section" style="display:none;">
+    <h3>الطلبات خارج دمشق</h3>
+
+    <p>
+        يتم تأكيد الطلب بعد تحويل عربون بقيمة
+        200 ليرة سورية جديدة عبر شام كاش.
+    </p>
+
+    <p>
+        يتم احتساب هذا المبلغ كجزء من قيمة المنتج
+        وليس رسوماً إضافية.
+    </p>
+
+    <p>
+        يتم شحن الطلب خلال 24 ساعة من تأكيد الطلب.
+    </p>
+
+    <p>
+        يستغرق الطلب حوالي 48 ساعة ليصل لمنطقتك.
+    </p>
+
+    <h4>شركات الشحن المعتمدة:</h4>
+
+    <ul>
+        <li>القدموس: معظم المحافظات (130 ل.س جديدة تقريباً)</li>
+        <li>مسارات: إدلب (1 دولار تقريباً)</li>
+        <li>الدرويش: المحافظات الشرقية (200 ل.س جديدة)</li>
+        <li>كرم: القنيطرة (1 دولار تقريباً)</li>
+    </ul>
+
+    <input
+        type="text"
+        id="receiver-name"
+        placeholder="الاسم الثلاثي للمستلم">
+
+    <input
+        type="text"
+        id="shipping-branch"
+        placeholder="المنطقة أو فرع شركة الشحن الأقرب">
+
+        <div class="advance-payment">
+
+    <h3>إتمام الطلب</h3>
+
+    <p>
+        يرجى تحويل عربون بقيمة
+        <strong>200 ل.س جديدة</strong>
+    </p>
+
+    <p>
+        إلى محفظة شام كاش:
+    </p>
+
+    <div class="wallet-number">
+        6fa9cda8dd9e09f0e180868521bf2954
+    </div>
+
+    <p>
+        ثم إرسال صورة عملية التحويل
+        على الواتساب
+    </p>
+
+    <img
+        src="Images/shamcash-qr.jpg"
+        class="qr-image">
+
+    <a
+        href="https://wa.me/963939378651"
+        target="_blank"
+        class="whatsapp-btn">
+
+        إرسال صورة التحويل عبر واتساب
+
+    </a>
+
+</div>
+
+</div>
+
+<textarea
+    id="customer-notes"
+    placeholder="ملاحظات إضافية (اختياري)"
+></textarea>
+<div id="form-message" class="form-message"></div>
+    <button id="submit-order">
+        إرسال الطلب
+    </button>
+
+</div>
+
+        <div id="size--message"></div>
+
+        <h3>دليل القياسات</h3>
+
+        <img src="Images/size-guide.jpg" class="size-guide">
+
+        <p class="size-note">
+            جميع القياسات بالسنتيمتر (سم).
+        </p>
+
+        <div id="size-table"></div>
+
+    </div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+
+    <footer class="site-footer">
+
+    <h3>تواصل معنا</h3>
+
+    <div class="footer-links">
+
+        <a href="https://wa.me/963939378651"
+           target="_blank">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+        </a>
+
+        <a href="https://instagram.com/puzzle.sy"
+           target="_blank">
+
+            <i class="fa-brands fa-instagram"></i>
+
+        </a>
+
+    </div>
+
+    <p>
+        © PUZZLE STORE
+    </p>
+
+</footer>
+
+</body>
+
+</html>
