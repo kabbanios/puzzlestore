@@ -320,12 +320,22 @@ if (!name || !phone || !city || !address) {
 }
 const orderNumber =
 "PUZ-" + Date.now().toString().slice(-4);
+
+const allProducts = [
+
+    {
+        name: currentProduct.name,
+        size: selectedSize
+    },
+
+    ...selectedProducts
+
+];
     const orderData = {
 
         orderNumber: orderNumber,
 
-        product: currentProduct.name,
-
+        products: allProducts,
         size: selectedSize,
 
         name: name,
@@ -580,17 +590,22 @@ function showSizeSelector(product) {
     selector.style.display = "block";
 
     selector.innerHTML = `
-        <div class="popup-product-card">
-            <img
-                src="${product.images[0]}"
-                class="popup-product-image">
-            <h3>${product.name}</h3> <div class="popup-price">
-                ${product.price} ل.س
-            <div class="popup-sizes"></div>
+    <div class="popup-product-card">
 
+        <img
+            src="${product.images[0]}"
+            class="popup-product-image">
+
+        <h3>${product.name}</h3>
+
+        <div class="popup-price">
+            ${product.price} ل.س
         </div>
-    `;
 
+        <div class="popup-sizes"></div>
+
+    </div>
+`;
     const sizesContainer =
         selector.querySelector(".popup-sizes");
 
