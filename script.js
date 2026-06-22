@@ -336,7 +336,6 @@ const allProducts = [
         orderNumber: orderNumber,
 
         products: allProducts,
-        size: selectedSize,
 
         name: name,
 
