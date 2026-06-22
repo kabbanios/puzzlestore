@@ -75,7 +75,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <h3>معلومات الطلب</h3>
 
     <div id="selected-product-info"></div>
+    <div id="selectedProductsList" class="selected-products-list"></div>
 
+<div class="multi-products-section">
+
+    <div id="addProductBtn" class="add-product-box">
+
+        <span class="add-product-icon">
+        +
+    </span>
+    <span class="add-product-text">
+        إضافة منتج آخر
+    </span>
+
+    
+
+</div>
+    <div id="productCardsContainer" class="product-cards-container"></div>
+
+    <div id="sizeSelector" class="size-selector"></div>
+
+</div>
     <input
         type="text"
         id="customer-name"
@@ -122,12 +142,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </p>
 
         <p>
-            أجور التوصيل تتراوح بين
-            20 ألف و 60 ألف
-            حسب المنطقة
-        </p>
-
-        <p>
+      أجور التوصيل تتراوح بين 20 ألف للمناطق المحيطة بالبرامكة تقريباً و 60 ألف للمناطق البعيدة عن مركز المدينة مثل الكسوة والضاحية
+          </p>
+      <p>
             يمكنك التأكد من أجور التوصيل
             عند تواصل الكابتن معك
         </p>
@@ -164,6 +181,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <li>مسارات: إدلب (1 دولار تقريباً)</li>
         <li>الدرويش: المحافظات الشرقية (200 ل.س جديدة)</li>
         <li>كرم: القنيطرة (1 دولار تقريباً)</li>
+        <li>المفتي: ريف حلب (130 ل.س جديدة تقريباً)</li>
+
     </ul>
 
     <input
@@ -218,8 +237,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <textarea
     id="customer-notes"
     placeholder="ملاحظات إضافية (اختياري)"
-></textarea>
-<div id="form-message" class="form-message"></div>
+
+    ></textarea>
+
+    <div id="form-message" class="form-message"></div>
     <button id="submit-order">
         إرسال الطلب
     </button>

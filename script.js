@@ -1,5 +1,7 @@
 let selectedSize = null;
 let currentProduct = null;
+let selectedProducts = [];
+let pendingProduct = null;
 const params = new URLSearchParams(window.location.search);
 const productId = Number(params.get("id"));
 
@@ -454,5 +456,171 @@ if (closeModal) {
         .style.display = "none";
 
             });
+
+}
+function renderSelectedProducts() {
+
+    const container =
+        document.getElementById("selectedProductsList");
+
+    if (!container) return;
+
+    container.innerHTML = "";
+
+    selectedProducts.forEach((item, index) => {
+
+        const div =
+            document.createElement("div");
+
+        div.className =
+            "selected-product-item";
+
+ div.innerHTML = `
+
+<div class="selected-product-card">
+
+    <span>
+        المنتج ${index + 2} :
+        ${item.name}
+        ${item.size}
+    </span>
+
+    <button
+        class="remove-product"
+        onclick="removeProduct(${index})">
+        ✕
+    </button>
+
+</div>
+
+`;
+
+        container.appendChild(div);
+
+    });
+
+}
+
+function removeProduct(index) {
+
+    selectedProducts.splice(index, 1);
+
+    renderSelectedProducts();
+
+}
+const addProductBtn =
+document.getElementById("addProductBtn");
+
+if (addProductBtn) {
+
+    addProductBtn.addEventListener("click", () => {
+
+        const container =
+            document.getElementById("productCardsContainer");
+
+        container.style.display = "block";
+
+        container.innerHTML = "";
+
+        products.forEach(product => {
+
+            const card =
+                document.createElement("div");
+
+            card.className =
+                "product-card-mini";
+
+            card.innerHTML = `
+                <img src="${product.images[0]}">
+
+                <div style="margin-top:8px;">
+                    ${product.name}
+                </div>
+
+                <button
+                    style="
+                        margin-top:8px;
+                        padding:6px 12px;
+                        border:none;
+                        border-radius:6px;
+                        background:#768b3f;
+                        color:white;
+                        cursor:pointer;
+                    ">
+                    إضافة
+                </button>
+            `;
+
+            card.querySelector("button")
+                .addEventListener("click", () => {
+
+                    pendingProduct = product;
+
+                    showSizeSelector(product);
+
+                });
+
+            container.appendChild(card);
+
+        });
+
+    });
+
+}
+function showSizeSelector(product) {
+
+    const cards =
+        document.getElementById("productCardsContainer");
+
+    const selector =
+        document.getElementById("sizeSelector");
+
+    cards.style.display = "none";
+
+    selector.style.display = "block";
+
+    selector.innerHTML = `
+        <div class="popup-product-card">
+            <img
+                src="${product.images[0]}"
+                class="popup-product-image">
+            <h3>${product.name}</h3> <div class="popup-price">
+                ${product.price} ل.س
+            <div class="popup-sizes"></div>
+
+        </div>
+    `;
+
+    const sizesContainer =
+        selector.querySelector(".popup-sizes");
+
+    product.sizes.forEach(size => {
+
+        const btn =
+            document.createElement("button");
+
+        btn.className =
+            "size-btn";
+
+        btn.textContent =
+            size;
+
+        btn.addEventListener("click", () => {
+
+            selectedProducts.push({
+
+                id: product.id,name: product.name,size: size
+
+            });
+
+            selector.style.display = "none";
+
+            renderSelectedProducts();
+
+        });
+
+        sizesContainer.appendChild(btn);
+
+    });
 
 }
