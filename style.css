@@ -6,15 +6,59 @@ body{
 }
 
 header{
-    text-align:center;
-    padding:25px;
-}
 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: white;
+
+    text-align: center;
+
+    padding: 15px 0 8px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+
+}
 header h1{
     margin:0;
     font-size:40px;
 }
+.navbar{
 
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    border-top: 1px solid #ececec;
+
+    padding-top: 12px;
+
+}
+
+.navbar a{
+
+    text-decoration: none;
+
+    color: #1f3d12;
+
+    font-family: 'Cairo', sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    transition: .25s;
+
+}
+
+.navbar a:hover{
+
+    color: #768b3f;
+
+}
 #products-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -135,6 +179,8 @@ header h1{
     width:100%;
     margin-top:20px;
     font-size:18px;
+    font-family:'Cairo',sans-serif;
+
 }
 .active-size{
     background:#1f3d12;
@@ -163,7 +209,17 @@ header h1{
     border-radius:12px;
 }
 
-#order-form-container input,
+#order-form-container input{
+
+    width:96%;
+    padding:12px;
+    margin-bottom:12px;
+
+    border:1px solid #ccc;
+    border-radius:8px;
+
+    font-family:Cairo;
+}
 #order-form-container select{
 
     width:100%;
@@ -187,7 +243,8 @@ header h1{
     color:white;
 
     border-radius:8px;
-
+    font-size: 18px;
+    font-family: Cairo, sans-serif;
     cursor:pointer;
 }
 .shipping-info{
@@ -206,7 +263,7 @@ header h1{
     background: #f7f8f2;
     border: 2px solid #6b7d3a;
     color: #1f3d12;
-    padding: 15px;
+    padding: 3px;
     margin: 15px 0 20px;
     border-radius: 10px;
     text-align: center;
@@ -225,11 +282,12 @@ header h1{
     box-sizing:border-box;
 }
 .advance-payment{
-    margin-top:25px;
-    padding:20px;
+    margin-top:10px;
+    padding:10px;
     background:#f8f8f8;
     border-radius:12px;
-    text-align:center;
+    text-align:right;
+    line-height: 1.4;
 }
 
 .wallet-number{
@@ -250,7 +308,7 @@ header h1{
 
 .whatsapp-btn{
     display:block;
-    width:100%;
+    width:13%;
     background:#25D366;
     color:white;
     text-decoration:none;
@@ -393,11 +451,16 @@ header h1{
     background:#e8f5e9;
     color:#2e7d32;
 }
-.site-logo {
-    max-width: 300px;
+.site-logo{
+
+    width: 180px;
+
     height: auto;
+
     display: block;
-    margin: 0 auto;
+
+    margin: 0 auto 12px;
+
 }
 .site-footer {
     margin-top: 50px;
@@ -453,7 +516,7 @@ header h1{
 
     margin-bottom:20px;
 
-    height:60px;
+    height:40px;
 
     border:3px dashed #6b7d3a;
     border-radius:10px;
@@ -509,12 +572,12 @@ header h1{
 
 .product-card-mini{
     display:inline-block;
-    width:120px;
+    width:110px;
     border:1px solid #ddd;
     border-radius:12px;
     padding:10px;
     text-align:center;
-    margin-left:10px;
+    margin-left:8px;
     cursor:pointer;
     background:white;
 }
@@ -556,13 +619,12 @@ header h1{
 .selected-product-card{
 
     position:relative;
-
     background: #f7f8f2;
     border: 2px solid #6b7d3a;
     color: #1f3d12;
     width:100%;
     box-sizing:border-box;
-    padding: 15px;
+    padding: 3px;
     margin: 1px 0 1px;
     border-radius: 10px;
     text-align: center;
@@ -617,52 +679,165 @@ header h1{
 }
 
 .popup-product-card{
-
     max-width:320px;
-
-    margin:20px auto;
-
-    padding:15px;
-
+    margin:15px auto;
+    padding:10px;
     border:1px solid #ddd;
-
     border-radius:12px;
-
-    background:white;
-
+    background:#fff;
     text-align:center;
-    font-size:28px;
-    font-family: 'Cairo', sans-serif;
-    font-weight:bold;
 }
 
 .popup-product-image{
-
     width:100%;
-
     height:300px;
-
     object-fit:cover;
-
     border-radius:10px;
 }
 
+.popup-product-card h3{
+    margin:8px 0 3px;
+    font-size:28px;
+    font-weight:700;
+    line-height:1.2;
+}
+
 .popup-price{
-
-    font-size:20px;
-font-family: 'Cairo', sans-serif;
-    margin:10px 0;
-
-    color:#000000;
+    margin:0 0 10px;
+    font-size:22px;
+    color:#000;
 }
 
 .popup-sizes{
-
     display:flex;
-
-    gap:5px;
-
     justify-content:center;
-
+    gap:6px;
     flex-wrap:wrap;
+}
+.faq-section{
+
+    max-width:900px;
+
+    margin:70px auto;
+
+    padding:20px;
+
+}
+
+.faq-section h2{
+
+    text-align:right;
+
+    font-size:22px;
+
+    color:#1f3d12;
+
+    margin-bottom:20px;
+
+}
+
+.faq-item{
+
+    border:2px solid #d8dfc3;
+
+    border-radius:12px;
+
+    margin-bottom:14px;
+
+    overflow:hidden;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+.faq-item:hover{
+
+    border-color:#768b3f;
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    background:white;
+
+    border:none;
+
+    padding:6px 10px;
+
+    cursor:pointer;
+
+    text-align:right;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    font-family:'Cairo',sans-serif;
+
+    color:#1f3d12;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.faq-question::before{
+
+    content:"+";
+
+    font-size:24px;
+
+    color:#768b3f;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.faq-item.active .faq-question::before{
+
+    content:"−";
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+    background:#f9faf5;
+
+    text-align:right;
+
+}
+
+.faq-answer p{
+
+    margin:10px 0;
+
+    line-height:1.9;
+
+}
+
+.faq-answer strong{
+
+    color:#1f3d12;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:900px;
+
+    padding:20px 22px;
+
 }

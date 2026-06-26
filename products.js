@@ -84,10 +84,10 @@ const products = [
 Puzzle..قطعة بتكمل ستايلك ❤️`,
     sizes: ["M","L","XL","XXL"],
     sizeChart: [
-        { size:"M", waist:"40-42", thigh:30, leg:22, length:107 },
-        { size:"L", waist:"42-44", thigh:31, leg:23, length:108 },
-        { size:"XL", waist:"44-46", thigh:32, leg:23, length:109 },
-        { size:"XXL", waist:"46-48", thigh:33, leg:24, length:110 }
+        { size:"M", waist:"40-42",weight:"50-65كغ", thigh:30, leg:22,weight: "58-65 كغ", length:107 },
+        { size:"L", waist:"42-44", thigh:31, leg:23, weight: "65-73 كغ", length:108 },
+        { size:"XL", waist:"44-46", thigh:32, leg:23, weight: "73-82 كغ", length:109 },
+        { size:"XXL", waist:"46-48", thigh:33, leg:24,weight:"82-92 كغ", length:110 }
     ],
     images: [
         "Images/p1.jpg",
@@ -105,10 +105,10 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
     description: "كارغو كتان",
     sizes: ["XL","XXL"],
     sizeChart: [
-        { size:"M", waist:"40-42", thigh:30, leg:21, length:102 },
-        { size:"L", waist:"42-44", thigh:31, leg:21, length:103 },
-        { size:"XL", waist:"44-46", thigh:33, leg:22, length:104 },
-        { size:"XXL", waist:"46-48", thigh:35, leg:22, length:105 }
+        { size:"M", waist:"40-42", thigh:30, leg:21,weight:"58-65 كغ", length:102 },
+        { size:"L", waist:"42-44", thigh:31, leg:21,weight:"65-73 كغ", length:103 },
+        { size:"XL", waist:"44-46", thigh:33, leg:22,weight:"73-82 كغ", length:104 },
+        { size:"XXL", waist:"46-48", thigh:35, leg:22,weight:"82-92 كغ", length:105 }
     ],
     images: [
         "Images/yc1.jpeg",
@@ -124,14 +124,20 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
     description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
     sizes: ["42","44","46","48","50","52"],
-    sizeChart: [
-   { size:"42", waist:42, thigh:30, leg:22, length:104 },
-   { size:"44", waist:44, thigh:31, leg:23, length:104 },
-   { size:"46", waist:46, thigh:32, leg:23, length:104 },
-   { size:"48", waist:48, thigh:33, leg:24, length:104 },
-   { size:"50", waist:50, thigh:34, leg:24, length:104 },
-   { size:"52", waist:52, thigh:35, leg:25, length:110 },
+   sizeChart: [
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:29, leg:22, length:104 },
 
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
+  { size:"52", weight:"99+ كغ", waist:52, thigh:35, leg:25, length:110 }
     ],
     images: [
         "Images/jb1.jpg",
@@ -148,13 +154,19 @@ description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
 sizes: ["42","44","46","48","50","52","54"],
 sizeChart: [
-{ size:"42", waist:42, thigh:30, leg:22, length:104 },
-{ size:"44", waist:44, thigh:31, leg:23, length:104 },
-{ size:"46", waist:46, thigh:32, leg:23, length:104 },
-{ size:"48", waist:48, thigh:33, leg:24, length:104 },
-{ size:"50", waist:50, thigh:34, leg:24, length:104 },
-{ size:"52", waist:52, thigh:35, leg:25, length:110 },
-{ size:"54", waist:54, thigh:3736, leg:25, length:110 },
+{ size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
+  { size:"52", weight:"99+ كغ", waist:52, thigh:35, leg:25, length:110 },
+
+{ size:"54",weight:"102+ كغ", waist:54, thigh:3736, leg:25, length:110 },
 
 ],
 images: [
@@ -172,11 +184,16 @@ description: `لون الصيف 😍
 ✔️قطن 100% بدون ليكرا`,
 sizes: ["50"],
 sizeChart: [
-{ size:"42", waist:42, thigh:30, leg:22, length:104 },
-{ size:"44", waist:44, thigh:31, leg:23, length:104 },
-{ size:"46", waist:46, thigh:32, leg:23, length:104 },
-{ size:"48", waist:48, thigh:33, leg:24, length:104 },
-{ size:"50", waist:50, thigh:34, leg:24, length:104 }
+ { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
 ],
 images: [
 "Images/i1.jpg",
@@ -191,14 +208,20 @@ images: [
 id: 9,
 name: "باغي أسود",
 price: 2350,
-description: "باغي أسود",
+description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
 sizes: ["44","48","50"],
 sizeChart: [
-{ size:"42", waist:42, thigh:30, leg:22, length:104 },
-{ size:"44", waist:44, thigh:31, leg:23, length:104 },
-{ size:"46", waist:46, thigh:32, leg:23, length:104 },
-{ size:"48", waist:48, thigh:33, leg:24, length:104 },
-{ size:"50", waist:50, thigh:34, leg:24, length:104 }
+ { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
 ],
 images: [
 "Images/bb1.jpg",
@@ -212,14 +235,15 @@ images: [
 id: 10,
 name: "كارغو أزرق فاتح",
 price: 2350,
-description: "كارغو أزرق فاتح",
-sizes: ["40","42","44","46"],
+description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
+sizes: ["40","42","44",],
 sizeChart: [
-{ size:"40", waist:40, thigh:30, leg:20, length:102 },
-{ size:"42", waist:42, thigh:31, leg:21, length:103 },
-{ size:"44", waist:44, thigh:32, leg:22, length:104 },
-{ size:"46", waist:46, thigh:33, leg:23, length:105 },
-{ size:"48", waist:48, thigh:34, leg:24, length:106 }
+{ size:"40", weight:"50-58 كغ",waist:40, thigh:30, leg:20, length:102 },
+{ size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:21, length:103 },
+{ size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:22, length:104 },
+{ size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:105 },
+{ size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:106 },
 ],
 images: [
 "Images/bc1.jpg",
@@ -233,14 +257,20 @@ images: [
 id: 11,
 name: "باغي رمادي",
 price: 2350,
-description: "باغي رمادي",
+description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
 sizes: ["44","48","50"],
 sizeChart: [
-{ size:"42", waist:42, thigh:30, leg:22, length:104 },
-{ size:"44", waist:44, thigh:31, leg:23, length:104 },
-{ size:"46", waist:46, thigh:32, leg:23, length:104 },
-{ size:"48", waist:48, thigh:33, leg:24, length:104 },
-{ size:"50", waist:50, thigh:34, leg:24, length:104 }
+ { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
 ],
 images: [
 "Images/gb1.jpg",
@@ -255,14 +285,20 @@ images: [
 id: 12,
 name: "كارغو رمادي",
 price: 2350,
-description: "كارغو رمادي",
+description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
 sizes: ["42","44","46","48",],
 sizeChart: [
-{ size:"42", waist:42, thigh:30, leg:22, length:104 },
-{ size:"44", waist:44, thigh:31, leg:23, length:104 },
-{ size:"46", waist:46, thigh:32, leg:23, length:104 },
-{ size:"48", waist:48, thigh:33, leg:24, length:104 },
-{ size:"50", waist:50, thigh:34, leg:24, length:104 }
+ { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
 ],
 images: [
 "Images/gc1.jpg",
@@ -277,14 +313,15 @@ images: [
 id: 13,
 name: "كارغو أزرق غامق",
 price: 2350,
-description: "كارغو أزرق غامق",
+description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
 sizes: ["40","42","46"],
 sizeChart: [
-{ size:"40", waist:40, thigh:30, leg:20, length:102 },
-{ size:"42", waist:42, thigh:31, leg:21, length:103 },
-{ size:"44", waist:44, thigh:32, leg:22, length:104 },
-{ size:"46", waist:46, thigh:33, leg:23, length:105 },
-{ size:"48", waist:48, thigh:34, leg:24, length:106 },
+{ size:"40", weight:"50-58 كغ",waist:40, thigh:30, leg:20, length:102 },
+{ size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:21, length:103 },
+{ size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:22, length:104 },
+{ size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:105 },
+{ size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:106 },
 ],
 images: [
 "Images/nc1.jpg",

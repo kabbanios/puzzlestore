@@ -109,6 +109,7 @@ const product = currentProduct;
             <table class="size-table">
                 <tr>
                     <th>القياس</th>
+                    <th>الوزن المناسب (تقريباً)</th>
                     <th>الخصر</th>
                     <th>الفخذ</th>
                     <th>الرجل</th>
@@ -121,6 +122,7 @@ const product = currentProduct;
             html += `
                 <tr>
                     <td>${row.size}</td>
+                    <td>${row.weight}</td>
                     <td>${row.waist}</td>
                     <td>${row.thigh}</td>
                     <td>${row.leg}</td>
@@ -600,7 +602,7 @@ function showSizeSelector(product) {
         <h3>${product.name}</h3>
 
         <div class="popup-price">
-            ${product.price} ل.س
+            ${product.price} ل.س جديدة
         </div>
 
         <div class="popup-sizes"></div>
@@ -640,3 +642,25 @@ function showSizeSelector(product) {
     });
 
 }
+document.querySelectorAll(".faq-question").forEach(question=>{
+
+    question.addEventListener("click",()=>{
+
+        const item=question.parentElement;
+
+        document.querySelectorAll(".faq-item").forEach(faq=>{
+
+            if(faq!==item){
+
+                faq.classList.remove("active");
+
+            }
+
+        });
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
