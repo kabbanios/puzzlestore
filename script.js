@@ -357,6 +357,8 @@ document.getElementById("loading-modal")
 
 submitOrder.disabled = true;
 
+console.log(orderData);
+
         await fetch(
     "https://script.google.com/macros/s/AKfycbzj_ls0TM8tl5GAmAqV-NXpZpEImOKO2onDZ8Gv3q3tuuDeclP5jACicLS4lE_phhnx/exec",
     {
