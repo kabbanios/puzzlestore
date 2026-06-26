@@ -157,16 +157,42 @@ header h1{
 }
 
 .size-table{
+
     width:100%;
+
     border-collapse:collapse;
+
     margin-top:20px;
+
+    font-size:15px;
+
 }
 
 .size-table th,
 .size-table td{
+
     border:1px solid #ddd;
-    padding:10px;
+
+    padding:6px 4px;
+
     text-align:center;
+
+    line-height:1.3;
+
+}
+
+.size-table th{
+
+    font-size:15px;
+
+    font-weight:700;
+
+}
+
+.size-table td{
+
+    font-size:14px;
+
 }
 
 .order-btn{
