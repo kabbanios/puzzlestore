@@ -226,7 +226,7 @@ if (city) {
         const shipping =
             document.getElementById("shipping-section");
 
-        if (city.value === "دمشق") {
+        if (city.value === "دمشق وريفها") {
 
             damascus.style.display = "block";
             shipping.style.display = "none";
@@ -274,7 +274,7 @@ submitOrder.addEventListener("click", async () => {
 
     let address = "";
 
-    if (city === "دمشق") {
+    if (city === "دمشق وريفها") {
 
         address =
             document.getElementById("customer-address")
