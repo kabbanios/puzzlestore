@@ -182,7 +182,7 @@ price: 2350,
 description: `لون الصيف 😍
 ✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["50"],
+sizes: ["46","50"],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
@@ -287,7 +287,7 @@ name: "كارغو رمادي",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["44","46","48",],
+sizes: ["44","46","48","50",],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
@@ -315,7 +315,7 @@ name: "كارغو أزرق غامق",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["40","42","46"],
+sizes: ["40","42",],
 sizeChart: [
 { size:"40", weight:"50-58 كغ",waist:40, thigh:30, leg:20, length:102 },
 { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:21, length:103 },
