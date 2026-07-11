@@ -17,8 +17,27 @@ const product = currentProduct;
         document.getElementById("product-name").textContent =
             product.name;
 
-        document.getElementById("product-price").textContent =
-            product.price + " ل.س جديدة";
+        const priceBox =
+    document.getElementById("product-price");
+
+if(product.discountPrice){
+
+    priceBox.innerHTML = `
+        <span class="old-price">
+            ${product.price} ل.س
+        </span>
+
+        <span class="new-price">
+            ${product.discountPrice} ل.س
+        </span>
+    `;
+
+}else{
+
+    priceBox.textContent =
+        product.price + " ل.س جديدة";
+
+}
 
         document.getElementById("product-description").textContent =
             product.description;
@@ -185,26 +204,48 @@ document.getElementById("selected-product-info").textContent =
                     ? product.images[0]
                     : "https://via.placeholder.com/500x600";
 
-            card.innerHTML =` 
-                <img src="${image}">
+           card.innerHTML =`
 
-                <div class="product-info">
+    ${product.discountPrice ? `
+        <div class="sale-badge">
+            ${product.discountLabel} 
+        </div>
+    ` : ""}
 
-                    <div class="product-name">
-                        ${product.name}
-                    </div>
+    <img src="${image}">
 
-                    <div class="product-price">
-                        ${product.price} ل.س جديدة
-                    </div>
+    <div class="product-info">
 
-                    <a class="view-btn"
-                       href="product.html?id=${product.id}">
-                       عرض المنتج
-                    </a>
+        <div class="product-name">
+            ${product.name}
+        </div>
 
-                </div>
-          ` ;
+        <div class="product-price">
+${
+product.discountPrice
+? `
+<div class="discount-price-row">
+    <span class="old-price">
+        ${product.price} ل.س
+    </span>
+
+    <span class="new-price">
+        ${product.discountPrice} ل.س جديدة
+    </span>
+</div>
+`
+: `${product.price} ل.س جديدة`
+}
+</div>
+
+        <a class="view-btn"
+           href="product.html?id=${product.id}">
+           عرض المنتج
+        </a>
+
+    </div>
+
+`;
 
             grid.appendChild(card);
 
@@ -602,8 +643,31 @@ function showSizeSelector(product) {
         <h3>${product.name}</h3>
 
         <div class="popup-price">
-            ${product.price} ل.س جديدة
-        </div>
+
+${
+product.discountPrice
+
+?
+
+`
+
+<span class="old-price">
+${product.price} ل.س 
+</span>
+
+<span class="new-price">
+${product.discountPrice} ل.س جديدة
+</span>
+
+`
+
+:
+
+`${product.price} ل.س جديدة`
+
+}
+
+</div>
 
         <div class="popup-sizes"></div>
 

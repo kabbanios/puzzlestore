@@ -21,7 +21,8 @@ const products = [
         "Images/b2.jpg",
         "Images/b3.jpg",
         "Images/b4.jpg",
-        "Images/b5.jpg"
+        "Images/b5.jpg",
+        "Images/b6.jpg"
     ]
 },
 
@@ -46,7 +47,8 @@ const products = [
         "Images/w2.jpg",
         "Images/w3.jpg",
         "Images/w4.jpg",
-        "Images/w5.jpg"
+        "Images/w5.jpg",
+        "Images/w6.jpg"
     ]
 },
 
@@ -71,7 +73,8 @@ const products = [
         "Images/g2.jpg",
         "Images/g3.jpg",
         "Images/g4.jpg",
-        "Images/g5.jpg"
+        "Images/g5.jpg",
+        "Images/g6.jpg"
     ]
 },
 
@@ -102,6 +105,8 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
     id: 5,
     name: "كارغو كتان",
     price: 2350,
+    discountPrice: 1650,
+    discountLabel: "آخر ثلاث قطع🔥",
     description: "كارغو كتان",
     sizes: ["XL","XXL"],
     sizeChart: [
@@ -182,7 +187,7 @@ price: 2350,
 description: `لون الصيف 😍
 ✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["46","50"],
+sizes: ["50"],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
@@ -235,6 +240,8 @@ images: [
 id: 10,
 name: "كارغو أزرق فاتح",
 price: 2350,
+discountPrice: 1900,
+discountLabel: "آخر ثلاث قطع🔥",
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
 sizes: ["40","42","44",],
@@ -313,6 +320,8 @@ images: [
 id: 13,
 name: "كارغو أزرق غامق",
 price: 2350,
+discountPrice: 1900,
+discountLabel:  "آخر قطعتين⚡️",
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
 sizes: ["40","42",],

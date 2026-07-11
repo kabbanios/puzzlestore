@@ -867,3 +867,46 @@ header h1{
     padding:20px 22px;
 
 }
+
+.product-card{
+    position: relative;
+}
+
+.sale-badge{
+
+    position:absolute;
+
+    top:10px;
+    right:10px;
+
+    background:#d32f2f;
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+    font-weight:bold;
+
+    z-index:10;
+}
+.discount-price-row{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    gap:8px;
+    flex-wrap:nowrap;
+}
+
+.old-price{
+    color:#888;
+    text-decoration:line-through;
+    font-size:17px;
+}
+
+.new-price{
+    color:#d40000;
+    font-size:17px;
+    font-weight:bold;
+}
