@@ -9,7 +9,7 @@ const products = [
 ✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
 ✔️ قماشة قطن مكفولة وجودة عالية
 📍 طول المودل بالصورة: 178 سم`,
-    sizes: ["M","L","XL","XXL"],
+    sizes: ["M","L",],
     sizeChart: [
         { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
         { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
