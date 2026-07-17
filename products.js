@@ -9,7 +9,7 @@ const products = [
 ✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
 ✔️ قماشة قطن مكفولة وجودة عالية
 📍 طول المودل بالصورة: 178 سم`,
-    sizes: ["M","L",],
+    sizes: ["L",],
     sizeChart: [
         { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
         { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
@@ -215,7 +215,7 @@ name: "باغي أسود",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: [,"48","50"],
+sizes: [,"48"],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
@@ -244,7 +244,7 @@ discountPrice: 1900,
 discountLabel: "آخر ثلاث قطع🔥",
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["40","42","44",],
+sizes: ["40","44",],
 sizeChart: [
 { size:"40", weight:"50-58 كغ",waist:40, thigh:30, leg:20, length:102 },
 { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:21, length:103 },
