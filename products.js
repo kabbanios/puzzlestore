@@ -1,31 +1,35 @@
 const products = [
-
 {
     id: 1,
-    name: "باغي قطن أسود",
+    name: "كارغو أسود",
     price: 2350,
-    description: `بنطال قطن بنقشة لاكوست ✨
-✔️ قصة باغي مريحة وعصرية
-✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
-✔️ قماشة قطن مكفولة وجودة عالية
-📍 طول المودل بالصورة: 178 سم`,
-    sizes: ["L",],
-    sizeChart: [
-        { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
-        { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
-        { size:"XL", waist:"مطاط", thigh:37, leg:25, length:108 },
-        { size:"XXL", waist:"مطاط", thigh:38, leg:26, length:108 }
+    description: `✔️جينز أسود
+    ✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
+    sizes: ["40","42","44","46","48","50"],
+   sizeChart: [
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:29, leg:22, length:104 },
+
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+
     ],
     images: [
-        "Images/b1.jpg",
-        "Images/b2.jpg",
-        "Images/b3.jpg",
-        "Images/b4.jpg",
-        "Images/b5.jpg",
-        "Images/b6.jpg"
+        "Images/cb1.jpg",
+        "Images/cb2.jpg",
+        "Images/cb3.jpg",
+        "Images/cb4.jpg",
+        "Images/cb5.jpg"
+
     ]
 },
-
 {
     id: 2,
     name: "باغي قطن أبيض",
@@ -128,7 +132,7 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
     price: 2350,
     description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-    sizes: ["42","44","46","48","50"],
+    sizes: ["40","42","44","46","48","50"],
    sizeChart: [
   { size:"40", weight:"50-58 كغ", waist:40, thigh:29, leg:22, length:104 },
 
@@ -187,7 +191,7 @@ price: 2350,
 description: `لون الصيف 😍
 ✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["50"],
+    sizes: ["40","42","44","46","48","50"],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
@@ -215,7 +219,7 @@ name: "باغي أسود",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: [,"48"],
+    sizes: ["40","42","44","46","48",],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
@@ -266,7 +270,7 @@ name: "باغي رمادي",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["44","48","50"],
+    sizes: ["40","42","44","46","48","50"],
 sizeChart: [
  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
 
