@@ -8,17 +8,17 @@ const products = [
 ✔️قطن 100% بدون ليكرا`,
     sizes: ["40","42","44","46","48","50"],
    sizeChart: [
-  { size:"40", weight:"50-58 كغ", waist:40, thigh:29, leg:22, length:104 },
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
 
-  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:22, length:105 },
 
-  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:23, length:106 },
 
-  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:107 },
 
-  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:108 },
 
-  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+  { size:"50", weight:"92-102 كغ", waist:50, thigh:35, leg:24, length:109 },
 
     ],
     images: [
@@ -133,20 +133,18 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
     description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
     sizes: ["40","42","44","46","48","50"],
-   sizeChart: [
-  { size:"40", weight:"50-58 كغ", waist:40, thigh:29, leg:22, length:104 },
+  sizeChart: [
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
 
-  { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:22, length:105 },
 
-  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:23, length:106 },
 
-  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:107 },
 
-  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:108 },
 
-  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
-
-  { size:"52", weight:"99+ كغ", waist:52, thigh:35, leg:25, length:110 }
+  { size:"50", weight:"92-102 كغ", waist:50, thigh:35, leg:24, length:109 },
     ],
     images: [
         "Images/jb1.jpg",
@@ -163,15 +161,15 @@ description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
 sizes: ["42","44","46","48","50","52","54"],
 sizeChart: [
-{ size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+{ size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:105 },
 
-  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:106 },
 
-  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:107 },
 
-  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:108 },
 
-  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:109 },
 
   { size:"52", weight:"99+ كغ", waist:52, thigh:35, leg:25, length:110 },
 
@@ -193,13 +191,15 @@ description: `لون الصيف 😍
 ✔️قطن 100% بدون ليكرا`,
     sizes: ["40","42","44","46","48","50"],
 sizeChart: [
- { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
 
-  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:22, length:105 },
 
-  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:23, length:106 },
 
-  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:107 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:108 },
 
   { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
 
@@ -219,17 +219,19 @@ name: "باغي أسود",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-    sizes: ["40","42","44","46","48",],
+    sizes: ["40","42","44","46","48","50"],
 sizeChart: [
- { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:104 },
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
 
-  { size:"44", weight:"65-73 كغ", waist:44, thigh:31, leg:23, length:104 },
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:22, length:105 },
 
-  { size:"46", weight:"73-82 كغ", waist:46, thigh:32, leg:23, length:104 },
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:23, length:106 },
 
-  { size:"48", weight:"82-92 كغ", waist:48, thigh:33, leg:24, length:104 },
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:107 },
 
-  { size:"50", weight:"92-99 كغ", waist:50, thigh:34, leg:24, length:104 },
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:108 },
+
+  { size:"50", weight:"92-102 كغ", waist:50, thigh:35, leg:24, length:109 },
 
 ],
 images: [
