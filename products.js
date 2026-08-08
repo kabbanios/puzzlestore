@@ -32,6 +32,31 @@ const products = [
 },
 {
     id: 2,
+    name: "باغي قطن أسود",
+    price: 2350,
+    description: `بنطال قطن بنقشة لاكوست ✨
+✔️ قصة باغي مريحة وعصرية
+✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
+✔️ قماشة قطن مكفولة وجودة عالية
+📍 طول المودل بالصورة: 178 سم`,
+    sizes: ["M","L","XL","XXL"],
+    sizeChart: [
+        { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
+        { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
+        { size:"XL", waist:"مطاط", thigh:37, leg:25, length:108 },
+        { size:"XXL", waist:"مطاط", thigh:38, leg:26, length:108 }
+    ],
+    images: [
+        "Images/b1.jpg",
+        "Images/b2.jpg",
+        "Images/b3.jpg",
+        "Images/b4.jpg",
+        "Images/b5.jpg",
+        "Images/b6.jpg"
+    ]
+    },
+{
+    id: 3,
     name: "باغي قطن أبيض",
     price: 2350,
     description: `بنطال قطن بنقشة لاكوست ✨
@@ -57,7 +82,7 @@ const products = [
 },
 
 {
-    id: 3,
+    id: 4,
     name: "باغي قطن رمادي",
     price: 2350,
     description: `بنطال قطن بنقشة لاكوست ✨
@@ -83,7 +108,7 @@ const products = [
 },
 
 {
-    id: 4,
+    id: 5,
     name: "كارغو كتان بيج",
     price: 2350,
     description: `✔️كتان قطن 98% قطعة رطبة وصيفية بامتياز ❄️
@@ -106,7 +131,7 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
 },
 
 {
-    id: 5,
+    id: 6,
     name: "كارغو كتان",
     price: 2350,
     discountPrice: 1650,
@@ -127,7 +152,7 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
 },
 
 {
-    id: 6,
+    id: 7,
     name: "باغي أزرق فاتح",
     price: 2350,
     description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
@@ -154,12 +179,12 @@ Puzzle..قطعة بتكمل ستايلك ❤️`,
     ]
 },
 {
-id: 7,
+id: 8,
 name: "باغي أزرق غامق",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["42","44","46","48","50","52","54"],
+sizes: [,"44","48","50","52","54"],
 sizeChart: [
 { size:"42", weight:"58-65 كغ", waist:42, thigh:30, leg:22, length:105 },
 
@@ -183,7 +208,7 @@ images: [
 ]
 },
 {
-id: 8,
+id: 9,
 name: "باغي ثلجي",
 price: 2350,
 description: `لون الصيف 😍
@@ -214,7 +239,7 @@ images: [
 },
 
 {
-id: 9,
+id: 10,
 name: "باغي أسود",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
@@ -243,14 +268,14 @@ images: [
 },
 
 {
-id: 10,
+id: 11,
 name: "كارغو أزرق فاتح",
 price: 2350,
 discountPrice: 1900,
-discountLabel: "آخر ثلاث قطع🔥",
+discountLabel: "آخر قطعة🔥",
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-sizes: ["40","44",],
+sizes: ["44",],
 sizeChart: [
 { size:"40", weight:"50-58 كغ",waist:40, thigh:30, leg:20, length:102 },
 { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:21, length:103 },
@@ -267,7 +292,7 @@ images: [
 },
 
 {
-id: 11,
+id: 12,
 name: "باغي رمادي",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
@@ -295,7 +320,7 @@ images: [
 },
 
 {
-id: 12,
+id: 13,
 name: "كارغو رمادي",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
@@ -323,7 +348,7 @@ images: [
 },
 
 {
-id: 13,
+id: 14,
 name: "كارغو أزرق غامق",
 price: 2350,
 discountPrice: 1900,
