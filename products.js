@@ -30,6 +30,37 @@ const products = [
 
     ]
 },
+
+{
+    id: 15,
+    name: "الرمادي الترند",
+    price: 2350,
+    description: `✔️جينز رمادي
+    ✔️صور واقعية | جودة مضمونة ❤️‍🔥
+✔️قطن 100% بدون ليكرا`,
+    sizes: ["40","42","44","46","48","50"],
+   sizeChart: [
+  { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
+
+  { size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:22, length:105 },
+
+  { size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:23, length:106 },
+
+  { size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:107 },
+
+  { size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:108 },
+
+  { size:"50", weight:"92-102 كغ", waist:50, thigh:35, leg:24, length:109 },
+
+    ],
+    images: [
+        "Images/gt1.jpg",
+        "Images/gt2.jpg",
+        "Images/gt3.jpg",
+        "Images/gt4.jpg"
+
+    ]
+},
 {
     id: 2,
     name: "باغي قطن أسود",
@@ -64,7 +95,7 @@ const products = [
 ✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
 ✔️ قماشة قطن مكفولة وجودة عالية
 📍 طول المودل بالصورة: 178 سم`,
-    sizes: ["M","L","XL",],
+    sizes: ["L","XL",],
     sizeChart: [
         { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
         { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
