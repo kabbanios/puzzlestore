@@ -61,31 +61,7 @@ const products = [
 
     ]
 },
-{
-    id: 2,
-    name: "باغي قطن أسود",
-    price: 2350,
-    description: `بنطال قطن بنقشة لاكوست ✨
-✔️ قصة باغي مريحة وعصرية
-✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
-✔️ قماشة قطن مكفولة وجودة عالية
-📍 طول المودل بالصورة: 178 سم`,
-    sizes: ["M","L"],
-    sizeChart: [
-        { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
-        { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
-        { size:"XL", waist:"مطاط", thigh:37, leg:25, length:108 },
-        { size:"XXL", waist:"مطاط", thigh:38, leg:26, length:108 }
-    ],
-    images: [
-        "Images/b1.jpg",
-        "Images/b2.jpg",
-        "Images/b3.jpg",
-        "Images/b4.jpg",
-        "Images/b5.jpg",
-        "Images/b6.jpg"
-    ]
-    },
+
 {
     id: 3,
     name: "باغي قطن أبيض",
@@ -95,7 +71,7 @@ const products = [
 ✔️ يمكن زم البنطال من الأسفل للحصول على لوك مختلف حسب رغبتك
 ✔️ قماشة قطن مكفولة وجودة عالية
 📍 طول المودل بالصورة: 178 سم`,
-    sizes: ["L","XL",],
+    sizes: ["L",],
     sizeChart: [
         { size:"M", waist:"مطاط", thigh:35, leg:23, length:106 },
         { size:"L", waist:"مطاط", thigh:36, leg:24, length:107 },
@@ -245,7 +221,7 @@ price: 2350,
 description: `لون الصيف 😍
 ✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-    sizes: ["40","46","48","50"],
+    sizes: ["46","48","50"],
 sizeChart: [
   { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
 
@@ -275,7 +251,7 @@ name: "باغي أسود",
 price: 2350,
 description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
 ✔️قطن 100% بدون ليكرا`,
-    sizes: ["40","42","44","48","50"],
+    sizes: ["40","42","48","50"],
 sizeChart: [
   { size:"40", weight:"50-58 كغ", waist:40, thigh:30, leg:22, length:104 },
 
@@ -295,30 +271,6 @@ images: [
 "Images/bb2.jpg",
 "Images/bb3.jpg",
 "Images/bb4.jpg"
-]
-},
-
-{
-id: 11,
-name: "كارغو أزرق فاتح",
-price: 2350,
-discountPrice: 1900,
-discountLabel: "آخر قطعة🔥",
-description: `✔️صور واقعية | جودة مضمونة ❤️‍🔥
-✔️قطن 100% بدون ليكرا`,
-sizes: ["44",],
-sizeChart: [
-{ size:"40", weight:"50-58 كغ",waist:40, thigh:30, leg:20, length:102 },
-{ size:"42", weight:"58-65 كغ", waist:42, thigh:31, leg:21, length:103 },
-{ size:"44", weight:"65-73 كغ", waist:44, thigh:32, leg:22, length:104 },
-{ size:"46", weight:"73-82 كغ", waist:46, thigh:33, leg:23, length:105 },
-{ size:"48", weight:"82-92 كغ", waist:48, thigh:34, leg:24, length:106 },
-],
-images: [
-"Images/bc1.jpg",
-"Images/bc2.jpg",
-"Images/bc3.jpg",
-"Images/bc4.jpg"
 ]
 },
 
